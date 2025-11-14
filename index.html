@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier Flooring Solutions</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+  body { line-height: 1.6; color: #333; }
+
+  header { background: #004c99; color: #fff; padding: 20px 0; text-align: center; }
+  header h1 { font-size: 2em; }
+  header p { font-size: 1.1em; }
+
+  nav { background: #0066cc; padding: 10px 0; text-align: center; }
+  nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+  nav a:hover { text-decoration: underline; }
+
+  .hero { background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover; color: #fff; text-align: center; padding: 100px 20px; }
+  .hero h2 { font-size: 2.5em; margin-bottom: 20px; text-shadow: 2px 2px #000; }
+  .hero button { padding: 10px 25px; font-size: 1.2em; background: #ff9900; border: none; color: #fff; cursor: pointer; }
+  .hero button:hover { background: #e68a00; }
+
+  .about, .services, .contact { padding: 60px 20px; text-align: center; }
+  .about h2, .services h2, .contact h2 { margin-bottom: 20px; color: #004c99; }
+  .about p, .services p { max-width: 800px; margin: 0 auto 20px; }
+
+  .services-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .service-card { background: #f4f4f4; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+  .service-card h3 { margin-bottom: 10px; color: #0066cc; }
+
+  .contact form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+  .contact input, .contact textarea { padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; }
+  .contact button { padding: 10px; font-size: 1.1em; background: #004c99; border: none; color: #fff; cursor: pointer; border-radius: 5px; }
+  .contact button:hover { background: #003366; }
+
+  footer { background: #00264d; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  footer p { font-size: 0.9em; }
+
+  @media(max-width: 768px){
+    .services-grid { flex-direction: column; align-items: center; }
+    .hero { padding: 60px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Premier Flooring Solutions</h1>
+  <p>Your trusted partner for quality flooring installation</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Transform Your Home or Business</h2>
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Free Quote</button>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>Premier Flooring Solutions has been serving homeowners and businesses for over 10 years. Our expert team delivers high-quality flooring installations using the best materials and techniques. Customer satisfaction is our top priority.</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Hardwood Flooring</h3>
+      <p>Professional installation and refinishing of hardwood floors that last a lifetime.</p>
+    </div>
+    <div class="service-card">
+      <h3>Laminate Flooring</h3>
+      <p>Affordable and durable laminate solutions with a variety of styles and colors.</p>
+    </div>
+    <div class="service-card">
+      <h3>Carpet Installation</h3>
+      <p>Soft, durable carpets installed with precision to elevate any room.</p>
+    </div>
+    <div class="service-card">
+      <h3>Tile & Vinyl</h3>
+      <p>Expert installation of tiles and vinyl for kitchens, bathrooms, and commercial spaces.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Premier Flooring Solutions | Phone: (555) 123-4567 | Email: info@premierflooring.com</p>
+</footer>
+
+</body>
+</html>
